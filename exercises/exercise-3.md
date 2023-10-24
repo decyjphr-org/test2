@@ -41,11 +41,11 @@ You'll see the details of the alert including the file where this weakness exist
 
 10. Click on `Show more` to see more details including how to resolve this alert.
 
-   
+The [Exercise 5](../exercises/exercise-5.md) and [Exercise 6](../exercises/exercise-6.md) will show how to modify the problematic workflow file to resolve this alert. At the end of those exercises, once the file is committed, it will trigger the `Actions Workflow CodeQL` and the alert should be resolved if the recommend fix was implemented.
+
 > **NOTE**  
 > If `CodeQl Analysis` search is not returning any results, code scanning might not be enabled for the repo, please contact your organization admin or repository admin to enable it. If you want to learn more about setting up code scanning, you can follow [this tutorial](https://learn.microsoft.com/en-us/training/modules/configure-code-scanning/2-what-code-scanning).
 
 > **NOTE**    
 > For your convenience a sample of this workflow is available in [`/solutions`](/solutions) directory.
 
-The [Exercise 5](../exercises/exercise-5.md) and [Exercise 6](../exercises/exercise-6.md) will show how to modify the problematic workflow file to resolve this alert. At the end of those exercises, once the file is committed, it will trigger the `Actions Workflow CodeQL` and the alert should be resolved if the recommend fix was implemented.
