@@ -98,8 +98,10 @@ from string file, YamlNode accesskey, Actions::Workflow workflow,  Actions::Job 
 
 9. Now that the query is working, **save** the query.
 
-10. **commit** and **push** your changes to the repository
 
+## Modify your codescanning config to include the custom query
+
+1. Once the query changes have been pushed, you can modify the `codeql-config.yml` file to include the custom query
    ```
    queries:
      - uses: ./codeql-custom-queries-javascript/improper-aws-credentials.ql
@@ -107,13 +109,8 @@ from string file, YamlNode accesskey, Actions::Workflow workflow,  Actions::Job 
 
     > Add image
 
-
-## Modify your codescanning config to include the custom query
-
-1. Once the query changes have been pushed, you can modify the `codeql-config.yml` file to include the custom query
-2. 
-3. Commit this file into the `default`branch.
-
+2.  **commit** and **push** your changes to the repository
+   
 When the file is committed, it will generate a `push` event and the `Actions WorkFlow CodeQL` workflow should be triggered. Now `click` on the [`Actions`](../../actions) tab and you should see the workflow being scheduled to run based on the `push` event. 
 
 4. Monitor the workflow run and ensure that it finishes successfully.
