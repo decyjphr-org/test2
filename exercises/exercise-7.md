@@ -109,13 +109,17 @@ from string file, YamlNode accesskey, Actions::Workflow workflow,  Actions::Job 
 
     > Add image
 
-2.  **commit** and **push** your changes to the repository
+2.  **stage** and **commit** and **push** the following files to the repository:
+    - `./codeql-config.yml`
+    - `./codeql-custom-queries-javascript/codeql-pack.lock.yml`
+    - `./codeql-custom-queries-javascript/codeql-pack.yml`
+    - `./codeql-custom-queries-javascript/improper-aws-credentials.ql`
    
-When the file is committed, it will generate a `push` event and the `Actions WorkFlow CodeQL` workflow should be triggered. Now `click` on the [`Actions`](../../actions) tab and you should see the workflow being scheduled to run based on the `push` event. 
+When the changes are `pushed`, the `Actions WorkFlow CodeQL` workflow should be triggered. Now `click` on the [`Actions`](../../actions) tab and you should see the workflow being scheduled to run based on the `push` event. 
 
-4. Monitor the workflow run and ensure that it finishes successfully.
+3. Monitor the workflow run and ensure that it finishes successfully.
 
-5. Now, click on the `Security` tab. And you should see the `Security Overview` page and a **new** alert created.
+4. Now, click on the `Security` tab and you should see the `Security Overview` page and a **new** alert created.
 
 
 
